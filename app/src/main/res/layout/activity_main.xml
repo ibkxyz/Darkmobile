@@ -3,48 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.ibkxyz.anonymous.darkmobile.MainActivity"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="81dp">
+    android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="397dp"
-        android:background="#0A0B0C"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/dark1" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"/>
 
     <EditText
-        android:id="@+id/editText"
+
+        android:id="@+id/editTextLogin"
+        android:layout_marginTop="250dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:background="#FFFFFF"
         android:ems="10"
-        android:hint="Security Code"
+        android:hint="SecurityCode"
         android:inputType="numberPassword"
-        android:textColorHint="#000000"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="326dp" />
+        android:textColorHint="#000000" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="50dp"
+        android:id="@+id/buttonGo"
+        android:layout_width="45dp"
         android:layout_height="35dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/editText"
-        android:text="Go"
-       />
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/editTextLogin"
+        android:text="go"
+        />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="500dp"
-        android:layout_height="198dp"
-        android:layout_below="@+id/imageView"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/maze"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="405dp" />
+
 </RelativeLayout>

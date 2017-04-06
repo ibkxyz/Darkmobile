@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0B0C"
+    tools:context="com.ibkxyz.anonymous.darkmobile.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/back2" />
+
+    <EditText
+        android:layout_marginTop="200dp"
+        android:id="@+id/editTextChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="ChooseSecurityCode"
+        android:inputType="numberPassword"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editTextConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextChoose"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="ConfirmSecurityCode"
+        android:inputType="numberPassword"
+        android:textColorHint="#000000"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="login"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/editTextConfirm"
+        android:text="lock"
+        />
+</RelativeLayout>
